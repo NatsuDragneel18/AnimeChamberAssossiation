@@ -18,18 +18,18 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-hoi {}, my name is {}! if you have any questions about how to use me please give me /help... 
+Hey There, {}
 
-im a group manager bot maintained by  [this person](tg://user?id={}).
+My name is {}.
 
-My future updates will be put into This Channel - @MarieChechi & My Support Group @InFoTelGroup.
+This bot is made by [Ojas](tg://user?id={}).
 
-This is my [Deploy Code](https://heroku.com/deploy?template=https://github.com/TGExplore/Marie-2.0-English),
-you can create clone same like me..
+This bot is made for managing the Anime Chamber Association.
 
-For more commands click /help...
+To Become The Member Of Anime Chamber Join @chamberofanimefans
 
-**Keep in mind that any changes you DO do to the source have to be on github, as per the license.**
+If you want to see my command use /help...
+
 
 """
 
@@ -55,6 +55,7 @@ motivate him to make me even better. All the donation money will go to a better 
 (see his bio!). He's just a poor student, so every little helps!
 There are two ways of paying him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
 
+TECHNO_IMG = "https://telegra.ph/file/75d724f5eb563d3e19868.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -145,7 +146,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN)
     else:
-        update.effective_message.reply_text("waked up😏😏😏")
+        update.effective_message.reply_text("I am online now.")
 
 
 # for test purposes
