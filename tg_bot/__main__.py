@@ -19,7 +19,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-TECHNO_IMG = "https://telegra.ph/file/75d724f5eb563d3e19868.jpg"
+TECHNO_IMG = "https://telegra.ph/file/97c38cbce98a8ecb7f539.jpg"
 
 Hey There, {}
 
