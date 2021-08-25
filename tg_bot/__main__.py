@@ -40,8 +40,7 @@ Hello! my name *{}*.
 
 *Main* available commands:
  - /start: Start the bot...
- - /help: help....
- - /donate: To find out more about donating!
+ - /help: To see this message
  - /settings:
    - in PM: To find out what SETTINGS you have set....
    - in a group:
@@ -49,9 +48,6 @@ Hello! my name *{}*.
 {}
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll of the following commands  / or ! can  be used...\n")
-
-DONATE_STRING = """Heya, glad to hear you want to donate!
-"""
 
 IMPORTED = {}
 MIGRATEABLE = []
